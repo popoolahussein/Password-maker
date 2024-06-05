@@ -1,9 +1,38 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Hussein" />
+  <meta name="description" content="This is a dynamic password maker app, it ensures you have a strong and unique password of your own." />
+  <title>Password Maker</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+  <script type="module" src="/src/js/main.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Make a</h1>
+    <h2 class="text">unique password</h2>
+    <p class="text2">Ensure you have a secure, personalized password.</p>
+    <div>
+      <label for="length">Password Length:</label>
+      <input type="number" id="length" value="15" min="4" max="30">
+    </div>
+    <div>
+      <input type="checkbox" id="useSymbolsNumbers" checked>
+      <label for="useSymbolsNumbers">Include Symbols & Numbers</label>
+    </div>
+    <button id="generateButton">Generate Passwords</button>
+    <div class="password-box">
+      <div>
+        <h2 id="notification1" class="notification notification1"></h2>
+        <div id="password1" class="password"></div>
+      </div>
+      <div>
+        <h2 id="notification2" class="notification notification2"></h2>
+        <div id="password2" class="password"></div>
+      </div>
+    </div>
+  </main>
+</body>
 </html>
